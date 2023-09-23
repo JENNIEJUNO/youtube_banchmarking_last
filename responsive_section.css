@@ -1,0 +1,222 @@
+section{
+    font-size:15px;
+}
+section>.side_menu{
+    position:fixed;
+    top:70px;
+    overflow-y:scroll;
+    padding-left:10px;
+}
+section>.side_menu::-webkit-scrollbar{
+    width:10px;
+}
+section>.side_menu::-webkit-scrollbar-thumb{
+    border-radius:10px;
+}
+section>.side_menu:hover::-webkit-scrollbar-thumb{
+    background:rgb(226, 226, 226);
+}
+section>.side_menu>a>li{
+    display:flex;
+    align-items:center;
+    height:40px;
+    padding-left:10px;
+    border-radius:10px;
+    margin-right:10px;
+}
+section>.side_menu>a>li>i{
+    margin-right:30px;
+    font-size:20px;
+}
+section>.side_menu>a>li:hover{
+    background:rgb(226, 226, 226);
+}
+.video_tag{
+    display:flex;
+    flex-wrap:wrap;
+    position:fixed;
+    padding:10px 0px;
+    top:60px;
+    height:40px;
+    overflow:hidden;
+    background:white;
+}
+.video_tag>a>li{
+    margin-right:10px;
+    margin-bottom:10px;
+    padding:10px 10px;
+    border-radius:8px;
+    background:rgb(238, 237, 237);
+}
+.video_tag>a>li:hover{
+    background:rgb(226, 226, 226);
+}
+.video_box{
+    margin-top:70px;
+}
+@media screen and (min-width:5000px){
+    section{
+        display:flex;
+        justify-content:center;
+    }
+    .video_box{
+        width:4000px;
+    }
+    .side_menu{
+        left:0px;
+    }
+    .video_tag{
+        left:610px;
+    }
+}
+.row_video_list{
+    display:flex;
+    flex-wrap:wrap;
+}
+@media screen and (max-width:800px){
+    .row_video_list{
+        justify-content:center;
+    }
+}
+/*.row_video_list>.row_video_list_li{
+    - width 브라우저크기에 따라변경 -
+}*/
+.row_video_list>.row_video_list_li>.row_video_button{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 95%;
+    font-size: 70px;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin: auto;
+    cursor:pointer;
+}
+.row_video_list>.row_video_list_li>.row_video_button:hover{
+    background:red;
+    border-radius:0px;
+}
+
+/*다양한 동영상을 표현하기 위한 연출*/
+[color="orange"]{
+    background:orange;
+}
+[color="yellow"]{
+    background:yellow;
+}
+[color="green"]{
+    background:green;
+}
+[color="blue"]{
+    background:blue;
+}
+[color="navy"]{
+    background:navy;
+}
+[color="purple"]{
+    background:purple;
+}
+
+.row_temp_box{
+    display:flex;
+    width:95%; height:100px;
+    margin:10px auto;
+}
+.row_profile_box{
+    width:40px; height:100px;
+    margin-right:10px;
+}
+.row_profile_box>.row_profile{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    width:40px; height:40px;
+    border-radius:40px;
+    cursor:pointer;
+}
+.row_text_box{
+    height:100px; width:100%;
+    font-size:20px;
+}
+.column_video_box{/* li */
+    width:100%;
+    margin-bottom:50px;
+}
+.column_video_list{/* ul */
+    display:flex;
+    flex-wrap:wrap;
+}
+.column_video_list>.column_video_list_li{
+    display:flex;
+    justify-content:center;
+}
+.column_video_list>.column_video_list_li>.column_video_button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+    border-radius: 15px;
+    font-size:70px;
+    transition: 0.5s;
+    cursor:pointer;
+}
+.column_video_list>.column_video_list_li>.column_video_button:hover{
+    background:red;
+    border-radius: 0px;
+}
+@media screen and (max-width:800px){
+    .column_video_box{
+        display:flex;
+        justify-content: center;
+    }
+    .column_video_box>.column_video_list{
+        width:80%;
+    }
+}
+.short_box{
+    display:flex;
+    font-size:20px;
+}
+.short_box>li{
+    margin-right:10px;
+}
+
+/*new box*/
+.new_video_list_li>.new_video_button{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 95%;
+    font-size: 70px;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin: auto;
+    cursor:pointer;
+}
+.new_video_list_li>.new_video_button:hover{
+    border-radius:0px;
+    background:red;
+}
+.new_temp_box{
+    display:flex;
+    width:95%; height:100px;
+    margin:10px auto;
+}
+.new_profile_box{
+    width:40px; height:100px;
+    margin-right:10px;
+}
+.new_profile_box>.new_profile{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    width:40px; height:40px;
+    border-radius:40px;
+    cursor:pointer;
+}
+.new_text_box{
+    height:100px; width:100%;
+    font-size:20px;
+}

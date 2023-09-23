@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <link href="responsive_header.css" rel="stylesheet">
+    <link href="responsive_section.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5251502df3.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin:0px; padding:0px;
+            color:black;
+        }
+        a{
+            text-decoration:none;
+            color:black;
+        }
+        ul{
+            list-style:none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="left">
+            <li class="li_hover" onclick="header_left_button()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li><a href="index.html"><i class="fa-solid fa-play" style="color:blue"></i> BsCode47</a></li>
+        </ul>
+        <ul class="mid">
+            <li>
+                <div class="search_box" style="margin-right:10px;">
+                    <input type="search" placeholder="검색">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </li>
+            <li class="li_hover"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li class="li_hover"><a href="#"><i class="fa-solid fa-microphone"></i></a></li>
+        </ul>
+        <ul class="right">
+            <li class="li_hover"><a href="#"><i class="fa-solid fa-video"></i></a></li>
+            <li class="li_hover"><a href="#"><i class="fa-regular fa-bell"></i></a></li>
+            <li class="li_hover"><a href="#"><i class="fa-regular fa-user"></i></a></li>
+        </ul>
+    </header>
+    <section>
+        <ul class="side_menu">
+            <a href="#"><li><i class="fa-solid fa-house"></i>홈</li></a>
+            <a href="#"><li><i class="fa-brands fa-firefox-browser"></i>Shorts</li></a>
+            <a href="#"><li><i class="fa-solid fa-box"></i>구독</li></a>
+            <a href="#"><li><i class="fa-solid fa-circle-play"></i>Bscode47 Music</li></a>
+            <li style="padding:0px 10px; margin:10px 0px;"><hr></li>
+            <a href="#"><li><i class="fa-solid fa-box-open"></i>보관함</li></a>
+            <a href="#"><li><i class="fa-solid fa-business-time"></i>시청 기록</li></a>
+            <a href="#"><li><i class="fa-solid fa-star"></i>내 동영상</li></a>
+            <a href="#"><li><i class="fa-regular fa-clock"></i>나중에 볼 동영상</li></a>
+            <a href="#"><li><i class="fa-solid fa-download"></i>오프라인 저장 동영상</li></a>
+            <a href="#"><li><i class="fa-solid fa-scissors"></i>내 클립</li></a>
+            <li style="padding:0px 10px; margin:10px 0px;"><hr></li>
+            <a href="#"><li><i class="fa-solid fa-fire"></i>인기 급상승</li></a>
+            <a href="#"><li><i class="fa-solid fa-cart-shopping"></i>쇼핑</li></a>
+            <a href="#"><li><i class="fa-solid fa-music"></i>음악</li></a>
+            <a href="#"><li><i class="fa-solid fa-film"></i>영화</li></a>
+            <a href="#"><li><i class="fa-solid fa-headset"></i>실시간</li></a>
+            <a href="#"><li><i class="fa-solid fa-gamepad"></i>게임</li></a>
+            <a href="#"><li><i class="fa-solid fa-medal"></i>스포츠</li></a>
+            <a href="#"><li><i class="fa-solid fa-graduation-cap"></i>학습</li></a>
+            <li style="padding:0px 10px; margin:10px 0px;"><hr></li>
+            <a href="#"><li><i class="fa-solid fa-gear"></i>설정</li></a>
+            <a href="#"><li><i class="fa-regular fa-flag"></i>신고 기록</li></a>
+            <a href="#"><li><i class="fa-solid fa-question"></i>고객센터</li></a>
+            <a href="#"><li><i class="fa-solid fa-exclamation"></i>의견 보내기</li></a>
+        </ul>
+        <ul class="video_tag">
+            <a href="#"><li>전체</li></a>
+            <a href="#"><li>게임</li></a>
+            <a href="#"><li>믹스</li></a>
+            <a href="#"><li>음악</li></a>
+            <a href="#"><li>실시간</li></a>
+            <a href="#"><li>액션 어드벤쳐</li></a>
+            <a href="#"><li>최근에 업로드된 동영상</li></a>
+            <a href="#"><li>감상한 동영상</li></a>
+            <a href="#"><li>새로운 맞춤 동영상</li></a>
+        </ul>
+        <div class="video_box">
+            <ul class="row_video_list">
+                <li class="row_video_list_li" list="1">
+                    <div class="row_video_button" color="orange"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="orange"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="2">
+                    <div class="row_video_button" color="yellow"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="yellow"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <div class="video_hr" style="width:100%; margin-bottom:25px;">
+                    <hr style="height:4px; margin-bottom:25px; background:rgb(226, 226, 226); border:0px;">
+                    <ul class="short_box">
+                        <li><i class="fa-brands fa-firefox-browser"></i></li>
+                        <li>Shorts</li>
+                    </ul>
+                </div>
+                <li class="column_video_box" list="1">
+                    <ul class="column_video_list">
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="orange"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="yellow"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                    </ul>
+                </li>
+                <hr class="video_hr" style="width:100%; height:4px; margin-bottom:50px; background:rgb(226, 226, 226); border:0px;">
+                <li class="row_video_list_li" list="3">
+                    <div class="row_video_button" color="green"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="green"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="4">
+                    <div class="row_video_button" color="blue"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="blue"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <div class="video_hr" style="width:100%; margin-bottom:25px;">
+                    <hr style="height:4px; margin-bottom:25px; background:rgb(226, 226, 226); border:0px;">
+                    <ul class="short_box">
+                        <li><i class="fa-brands fa-firefox-browser"></i></li>
+                        <li>Shorts</li>
+                    </ul>
+                </div>
+                <li class="column_video_box" list="2">
+                    <ul class="column_video_list">
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="orange"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="yellow"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="green"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                    </ul>
+                </li>
+                <hr class="video_hr" style="width:100%; height:4px; margin-bottom:50px; background:rgb(226, 226, 226); border:0px;">
+                <li class="row_video_list_li" list="5">
+                    <div class="row_video_button" color="navy"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="navy"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="6">
+                    <div class="row_video_button" color="purple"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="purple"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <div class="video_hr" style="width:100%; margin-bottom:25px;">
+                    <hr style="height:4px; margin-bottom:25px; background:rgb(226, 226, 226); border:0px;">
+                    <ul class="short_box">
+                        <li><i class="fa-brands fa-firefox-browser"></i></li>
+                        <li>Shorts</li>
+                    </ul>
+                </div>
+                <li class="column_video_box" list="3">
+                    <ul class="column_video_list">
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="orange"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="yellow"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="green"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="blue"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="navy"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                    </ul>
+                </li>
+                <hr class="video_hr" style="width:100%; height:4px; margin-bottom:50px; background:rgb(226, 226, 226); border:0px;">
+                <li class="row_video_list_li" list="7">
+                    <div class="row_video_button" color="orange"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="orange"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="8">
+                    <div class="row_video_button" color="yellow"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="yellow"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <div class="video_hr" style="width:100%; margin-bottom:25px;">
+                    <hr style="height:4px; margin-bottom:25px; background:rgb(226, 226, 226); border:0px;">
+                    <ul class="short_box">
+                        <li><i class="fa-brands fa-firefox-browser"></i></li>
+                        <li>Shorts</li>
+                    </ul>
+                </div>
+                <li class="column_video_box" list="4">
+                    <ul class="column_video_list">
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="orange"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="yellow"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="green"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="blue"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="navy"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="purple"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                    </ul>
+                </li>
+                <hr class="video_hr" style="width:100%; height:4px; margin-bottom:50px; background:rgb(226, 226, 226); border:0px;">
+                <li class="row_video_list_li" list="9">
+                    <div class="row_video_button" color="green"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="green"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="10">
+                    <div class="row_video_button" color="blue"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="blue"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <div class="video_hr" style="width:100%; margin-bottom:25px;">
+                    <hr style="height:4px; margin-bottom:25px; background:rgb(226, 226, 226); border:0px;">
+                    <ul class="short_box">
+                        <li><i class="fa-brands fa-firefox-browser"></i></li>
+                        <li>Shorts</li>
+                    </ul>
+                </div>
+                <li class="column_video_box" list="5">
+                    <ul class="column_video_list">
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="orange"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="yellow"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="green"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="blue"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="navy"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="purple"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="orange"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                    </ul>
+                </li>
+                <hr class="video_hr" style="width:100%; height:4px; margin-bottom:50px; background:rgb(226, 226, 226); border:0px;">
+                <li class="row_video_list_li" list="11">
+                    <div class="row_video_button" color="navy"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="navy"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="12">
+                    <div class="row_video_button" color="purple"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="purple"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <div class="video_hr" style="width:100%; margin-bottom:25px;">
+                    <hr style="height:4px; margin-bottom:25px; background:rgb(226, 226, 226); border:0px;">
+                    <ul class="short_box">
+                        <li><i class="fa-brands fa-firefox-browser"></i></li>
+                        <li>Shorts</li>
+                    </ul>
+                </div>
+                <li class="column_video_box" list="6">
+                    <ul class="column_video_list">
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="orange"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="yellow"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="green"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="blue"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="navy"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="purple"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="orange"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="yellow"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                        <li class="column_video_list_li">
+                            <div class="column_video_button" color="green"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                        </li>
+                    </ul>
+                </li>
+                <hr class="video_hr" style="width:100%; height:4px; margin-bottom:50px; background:rgb(226, 226, 226); border:0px;">
+                <li class="row_video_list_li" list="13">
+                    <div class="row_video_button" color="orange"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="orange"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="14">
+                    <div class="row_video_button" color="yellow"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="yellow"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="15">
+                    <div class="row_video_button" color="green"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="green"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="16">
+                    <div class="row_video_button" color="blue"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="blue"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="17">
+                    <div class="row_video_button" color="navy"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="navy"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="18">
+                    <div class="row_video_button" color="purple"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="purple"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="19">
+                    <div class="row_video_button" color="orange"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="orange"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="20">
+                    <div class="row_video_button" color="yellow"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="yellow"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="21">
+                    <div class="row_video_button" color="green"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="green"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="22">
+                    <div class="row_video_button" color="blue"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="blue"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="23">
+                    <div class="row_video_button" color="navy"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="navy"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+                <li class="row_video_list_li" list="24">
+                    <div class="row_video_button" color="purple"><i class="fa-solid fa-play" style="color:white;"></i></div>
+                    <div class="row_temp_box">
+                        <div class="row_profile_box">
+                            <div class="row_profile" color="purple"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <div class="row_text_box">abcd efgh ijkl mnop qrst uvwx yzab cdef ghij klmn opqr stuv</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="responsive.js"></script>
+</body>
+</html>

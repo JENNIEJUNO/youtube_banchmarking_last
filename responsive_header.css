@@ -1,0 +1,85 @@
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    font-size:20px;
+    position:sticky;
+    top:0px;
+    background:white;
+    margin-bottom:10px;
+}
+header>.left{
+    display:flex;
+    align-items:center;
+}
+header .li_hover{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:40px; height:40px;
+    border-radius:40px;
+}
+header .li_hover:hover{
+    background:rgb(226, 226, 226);
+}
+header>.left>.li_hover:nth-child(1){
+    margin-right:30px;
+}
+header>.mid{
+    display:flex;
+    align-items:center;
+}
+header>.mid>.li_hover{
+    margin-right:10px;
+}
+header>.mid>li>.search_box{
+    position:relative;
+    height:40px;
+    overflow:hidden;
+    border-radius:40px;
+    border:1px solid rgb(238, 237, 237);
+}
+.search_box>input[type="search"]{
+    border:0px;
+    border-radius:40px;
+    width:85%; height:100%;
+    padding-left:10px;
+    outline:none;
+    font-size:20px;
+}
+header>.mid>li>.search_box>button{
+    display:flex;
+    justify-content:center; align-items:center;
+    position:absolute;
+    width:15%; height:100%;
+    border:0px;
+    border-right:40px;
+    top:0px; right:0px;
+    font-size:20px;
+    background:rgb(238, 237, 237);
+    cursor:pointer;
+}
+header>.mid>li>.search_box>button:hover{
+    background:rgb(226, 226, 226);
+}
+header>.mid>.li_hover:nth-child(3){
+    background:rgb(226, 226, 226);
+}
+header>.mid>.li_hover:nth-child(3):hover{
+    background:rgb(202, 201, 201);
+}
+@media screen and (max-width:800px){ /*마이크 이모티콘 이벤트*/
+    header>.mid>.li_hover:nth-child(3){
+        background:white;
+    }
+    header>.mid>.li_hover:nth-child(3):hover{
+        background:rgb(226, 226, 226);
+    }
+}
+header>.right{
+    display:flex;
+}
+header>.right>.li_hover{
+    margin-left:10px;
+}
